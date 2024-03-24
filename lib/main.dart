@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:from_zero_to_hero_ht/features/products/presentation/categories_page.dart';
+import 'package:from_zero_to_hero_ht/features/products/presentation/widgets/navegation_card.dart';
+
 
 void main() {
   runApp(const ProviderScope(child: App()));
@@ -14,7 +15,7 @@ class App extends StatelessWidget {
     return MaterialApp(
       theme:
           ThemeData(colorScheme: ColorScheme.fromSeed(seedColor: Colors.green)),
-      home: const CategoryPage(),
+      home: const NavigationExample(),
     );
   }
 }
